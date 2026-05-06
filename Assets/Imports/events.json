@@ -1,0 +1,1408 @@
+[
+  {
+    "ID": "IntroEvent",
+    "NodeType": "Tutorial",
+    "Title": "Broken Drop",
+    "Description": "The jump went horribly wrong. Heavy flak and high winds scattered the transport planes, missing the drop zone entirely. You have managed to rally only three other soldiers from your platoon. You are deep behind enemy lines, cut off from command, and supplies are critically low. Your only hope is to push through the occupation and link up with the main invasion army at either Cherbourg or Dieppe.",
+    "Options": [
+      {
+        "Text": "Check gear and move out.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "VillageEncounter",
+    "NodeType": "Encounter",
+    "Title": "Ambush in the Village",
+    "Description": "German soldiers are dug in near a French village. They spot your squad approaching.",
+    "Options": [
+      {
+        "Text": "Fight through the ambush!",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Fall back",
+        "ResultText": "You retreat to a safer position, losing precious time and supplies in the chaos.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "HiddenCache",
+    "NodeType": "Resupply",
+    "Title": "Hidden Supply Cache",
+    "Description": "You find a barn with hidden French resistance supplies.",
+    "Options": [
+      {
+        "Text": "Take what you can carry.",
+        "ResultText": "You raid the cache. It's not stealing if it helps fight the occupation, right?",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Leave it for the resistance",
+        "ResultText": "You leave the supplies for the local fighters. Hopefully, they put them to good use.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "BridgeBattle",
+    "NodeType": "Encounter",
+    "Title": "The Bridge Must Hold",
+    "Description": "You arrive at a key bridge. German forces are attempting to secure it.",
+    "Options": [
+      {
+        "Text": "Defend the bridge at all costs!",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Blow the bridge and retreat.",
+        "ResultText": "You rig the bridge to blow and pull back. It delays them, but costs you resources to reroute.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "DownedPilot",
+    "NodeType": "Event",
+    "Title": "Downed Allied Pilot",
+    "Description": "In a field you find the wreck of a crashed Allied plane. The pilot is alive but injured.",
+    "Options": [
+      {
+        "Text": "Help the pilot and recruit him.",
+        "ResultText": "He's grateful and joins your squad, though treating his wounds uses up some supplies.",
+        "Consequences": [
+          {
+            "Type": "AddSoldier"
+          },
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      },
+      {
+        "Text": "Take his supplies and move on.",
+        "ResultText": "You strip the wreck for useful gear. It's a cold decision, but survival comes first.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "GermanConvoy",
+    "NodeType": "Encounter",
+    "Title": "Enemy Convoy on the Road",
+    "Description": "A German supply convoy rumbles down a dirt road. They haven't spotted you yet.",
+    "Options": [
+      {
+        "Text": "Ambush the convoy.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Hide and wait for them to pass.",
+        "ResultText": "You stay low in the ditch. The trucks rumble past, unaware of your presence.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "PartisanMeeting",
+    "NodeType": "Resupply",
+    "Title": "Meeting with the Resistance",
+    "Description": "A Resistance cell contacts you through a local farmer. They can offer food and ammo in exchange for your help.",
+    "Options": [
+      {
+        "Text": "Assist in their sabotage mission.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          },
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Politely decline and keep moving.",
+        "ResultText": "You thank them but insist you must keep moving toward your objective.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "AbandonedFarmhouse",
+    "NodeType": "Event",
+    "Title": "The Farmhouse",
+    "Description": "You find an abandoned farmhouse. The door hangs open, and the air smells of gunpowder.",
+    "Options": [
+      {
+        "Text": "Search the house carefully.",
+        "ResultText": "You scavenge what you can. A few cans of food and some ammo were left behind.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      },
+      {
+        "Text": "Avoid it - too risky.",
+        "ResultText": "You circle around the property. Better to be safe than walk into a booby trap.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "SniperHill",
+    "NodeType": "Encounter",
+    "Title": "Sniper on the Hill",
+    "Description": "A German sniper is picking off anyone crossing the valley and is being protected by a squad of soldiers. You need to get through.",
+    "Options": [
+      {
+        "Text": "Engage and neutralize the squad.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Find another way around.",
+        "ResultText": "You take the long route through the dense woods, losing supplies but avoiding the shot.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "MedicalShortage",
+    "NodeType": "Event",
+    "Title": "Running Low on Medical Supplies",
+    "Description": "One of your men is badly wounded, and your morphine is almost gone.",
+    "Options": [
+      {
+        "Text": "Use your last medical kit to save him.",
+        "ResultText": "You use your last morphine. He stabilizes, but your medical stocks are dangerously low.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      },
+      {
+        "Text": "Leave him behind.",
+        "ResultText": "A heart-wrenching choice. You leave him with a weapon and move on. He is gone.",
+        "Consequences": [
+          {
+            "Type": "RemoveSoldier"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "RadioSignal",
+    "NodeType": "Event",
+    "Title": "Faint Radio Signal",
+    "Description": "You catch a faint Allied radio transmission on a broken field radio.",
+    "Options": [
+      {
+        "Text": "Try to boost the signal and respond.",
+        "ResultText": "You manage to send a reply, but the effort drains your batteries and delays you.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      },
+      {
+        "Text": "Ignore it and stay quiet.",
+        "ResultText": "Radio silence is safer. You ignore the transmission and keep moving.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "CapturedPatrol",
+    "NodeType": "Encounter",
+    "Title": "Captured Germans",
+    "Description": "You come across a small group of surrendered German soldiers guarded by Resistance fighters.",
+    "Options": [
+      {
+        "Text": "Execute them quickly and move on",
+        "ResultText": "War is hell. You deal with the prisoners quickly and move out.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      },
+      {
+        "Text": "Argue to take them prisoner instead",
+        "ResultText": "You convince the partisans to spare them, but it costs supplies to secure them.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "FloodedFields",
+    "NodeType": "Event",
+    "Title": "Flooded Fields",
+    "Description": "Low-lying farmland has been deliberately flooded to slow advances. It’s hard to move quickly.",
+    "Options": [
+      {
+        "Text": "Push through the swampy fields.",
+        "ResultText": "The mud sucks at your boots. You make it through, but equipment is lost and ruined.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -5
+          }
+        ]
+      },
+      {
+        "Text": "Wait until night to find a safer route.",
+        "ResultText": "You wait for darkness and better footing. It takes time, but you lose fewer supplies.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "FriendlyUnit",
+    "NodeType": "Event",
+    "Title": "Friendly Patrol",
+    "Description": "You spot soldiers ahead and they seem to be wearing American helmets, but it’s hard to be sure at this distance.",
+    "Options": [
+      {
+        "Text": "Approach cautiously with raised hands.",
+        "ResultText": "They are from the 82nd Airborne! They are lost and happy to join forces.",
+        "Consequences": [
+          {
+            "Type": "AddSoldier"
+          }
+        ]
+      },
+      {
+        "Text": "Stay hidden until you’re certain.",
+        "ResultText": "You can't risk it being a trap. You let them pass, staying safe but alone.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "StarvingRefugees",
+    "NodeType": "Event",
+    "Title": "Displaced Civilians",
+    "Description": "A group of French refugees approaches your camp. They are starving and beg for rations.",
+    "Options": [
+      {
+        "Text": "Share your rations with them.",
+        "ResultText": "They weep with gratitude. You have less food, but you've done the right thing.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -2
+          }
+        ]
+      },
+      {
+        "Text": "Turn them away, we need the food.",
+        "ResultText": "You harden your heart. You need every ounce of food to complete the mission.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "Minefield",
+    "NodeType": "Event",
+    "Title": "The Warning Sign",
+    "Description": "You nearly step on a 'Achtung! Minen!' sign. The field ahead is rigged with explosives.",
+    "Options": [
+      {
+        "Text": "Have one of the soldiers clear a path carefully.",
+        "ResultText": "The soldier works with steady hands. A path is cleared without incident.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      },
+      {
+        "Text": "Detour around the perimeter.",
+        "ResultText": "You decide not to risk it. The detour through the forest costs you time and supplies.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ArmoredSighting",
+    "NodeType": "Encounter",
+    "Title": "Tiger in the Mist",
+    "Description": "The distinct roar of an engine freezes your blood. A Tiger tank is idling in the clearing ahead.",
+    "Options": [
+      {
+        "Text": "Attempt to disable it with anti-tank gear",
+		"ResultText": "Before you manage to disable the Tiger you get spotted by a group of enemy soldiers. You manage to hastily escape but not without losing a member of your squad.",
+        "Consequences": [
+          {
+            "Type": "RemoveSoldier"
+          }
+        ]
+      },
+      {
+        "Text": "Stay low and crawl past it.",
+        "ResultText": "You crawl through the mud, holding your breath. The tank eventually moves on.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "AbandonedTruck",
+    "NodeType": "Resupply",
+    "Title": "The Supply Truck",
+    "Description": "You find a German Opel Blitz truck in a ditch. The driver is gone, but the cargo bed is covered.",
+    "Options": [
+      {
+        "Text": "Search the cargo bed.",
+        "ResultText": "Jackpot. The truck is full of untouched rations and ammunition.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 3
+          }
+        ]
+      },
+      {
+        "Text": "Siphon the fuel and leave.",
+        "ResultText": "You take the fuel. It's not much, but everything helps.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "FalseFlag",
+    "NodeType": "Encounter",
+    "Title": "Suspicious Uniforms",
+    "Description": "Soldiers wave you down from a farmhouse, but their boots don't match their Allied uniforms.",
+    "Options": [
+      {
+        "Text": "Open fire immediately!",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Retreat into the treeline.",
+        "ResultText": "You run for the trees as bullets tear up the ground. Some of your men are hit.",
+        "Consequences": [
+          {
+            "Type": "DamageSquad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "HeavyStorm",
+    "NodeType": "Event",
+    "Title": "Torrential Downpour",
+    "Description": "A sudden storm turns the dirt roads into thick mud. Movement is nearly impossible.",
+    "Options": [
+      {
+        "Text": "Force march through the mud.",
+        "ResultText": "It's a miserable slog. Boots are ruined and supplies soaked, but you keep moving.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -2
+          }
+        ]
+      },
+      {
+        "Text": "Set up camp and wait it out.",
+        "ResultText": "You hunker down. It costs time and rations, but the men get some rest.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "TheDefector",
+    "NodeType": "Event",
+    "Title": "The Defector",
+    "Description": "A lone German soldier emerges from the bushes with his hands up, offering a map case.",
+    "Options": [
+      {
+        "Text": "Accept the intel and let him go.",
+        "ResultText": "He provides accurate coordinates of enemy depots. The intel is valuable.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "He's a spy. Take him out.",
+        "ResultText": "You can't risk it and execute him on the spot.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ArtilleryBarrage",
+    "NodeType": "Event",
+    "Title": "Incoming Fire",
+    "Description": "The whistling of artillery shells fills the air. They are bracketing your position.",
+    "Options": [
+      {
+        "Text": "Sprint out of the kill zone!",
+        "ResultText": "Explosions rock the earth. Shrapnel flies everywhere, wounding several squad members.",
+        "Consequences": [
+          {
+            "Type": "DamageSquad"
+          }
+        ]
+      },
+      {
+        "Text": "Dig foxholes and pray.",
+        "ResultText": "You dig in as shells pound the area. You survive, but gear is destroyed in the chaos.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "RuinedChurch",
+    "NodeType": "Resupply",
+    "Title": "Sanctuary",
+    "Description": "A bombed-out church stands ahead. A priest inside offers you clean water and bandages.",
+    "Options": [
+      {
+        "Text": "Rest and recover.",
+        "ResultText": "The sanctuary provides a brief respite. The squad feels rested and restocked.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Trade some ammo for extra food.",
+        "ResultText": "The priest accepts the ammo for food. A fair trade in these times.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "GermanCheckpoint",
+    "NodeType": "Encounter",
+    "Title": "Roadblock",
+    "Description": "A machine gun nest and a barrier block the only road forward.",
+    "Options": [
+      {
+        "Text": "Flank and attack!",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Create a distraction to slip past.",
+        "ResultText": "You set a small fire to draw their attention. It costs resources, but you slip by.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "MortarTeam",
+    "NodeType": "Encounter",
+    "Title": "Mortar Spotters",
+    "Description": "You spot a German mortar crew setting up in a ruined courtyard. They haven't fired yet, but they have a clear line of sight on the road ahead.",
+    "Options": [
+      {
+        "Text": "Rush them before they can dial in the range.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Backtrack and find a route out of their view.",
+        "ResultText": "You double back through the mud, wasting time but avoiding the deadly mortar fire.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "GestapoCheckpoint",
+    "NodeType": "Encounter",
+    "Title": "The Interrogation",
+    "Description": "Ahead, a black staff car and two trucks block the road. Gestapo officers are aggressively questioning a group of terrified locals.",
+    "Options": [
+      {
+        "Text": "Ambush them to save the civilians.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Stay hidden and wait for them to leave.",
+        "ResultText": "You watch helplessly from the bushes. Eventually, they drive off, taking the civilians with them.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "HalftrackPatrol",
+    "NodeType": "Encounter",
+    "Title": "Hanomag on Patrol",
+    "Description": "The grinding of gears betrays a Sd.Kfz. 251 half-track patrolling the perimeter of the forest. It has a mounted machine gun.",
+    "Options": [
+      {
+        "Text": "Hit it with grenades.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Lay low in the ditch.",
+        "ResultText": "The half-track rolls past, its spotlight sweeping just inches above your heads.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "BunkerAssault",
+    "NodeType": "Encounter",
+    "Title": "Concrete Pillbox",
+    "Description": "A small concrete bunker overlooks the valley entrance. The slit is narrow, but the MG42 inside covers the entire approach.",
+    "Options": [
+      {
+        "Text": "Flank blind side and breach.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Use smoke grenades to screen a retreat.",
+        "ResultText": "You pop smoke and run. You escape, but you've used valuable tactical supplies.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "KubelwagenScout",
+    "NodeType": "Encounter",
+    "Title": "Forward Scouts",
+    "Description": "A Kubelwagen scout car is parked on a ridge. Two officers are scanning the area with binoculars and have a radio.",
+    "Options": [
+      {
+        "Text": "Take them out before they use the radio.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Crawl through the tall grass.",
+        "ResultText": "It's slow, agonizing work, but you slip past their surveillance without alerting command.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "DogPatrol",
+    "NodeType": "Encounter",
+    "Title": "Hounds",
+    "Description": "You hear barking. A German patrol with tracking dogs is moving through the woods, heading straight for your scent.",
+    "Options": [
+      {
+        "Text": "Set up a hasty ambush.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Wade through the icy stream to hide your scent.",
+        "ResultText": "The freezing water masks your trail, but the cold saps your squad's energy and ruins some rations.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "SearchlightTower",
+    "NodeType": "Encounter",
+    "Title": "The Watchtower",
+    "Description": "A hastily erected wooden watchtower with a searchlight sweeps the field you need to cross.",
+    "Options": [
+      {
+        "Text": "Shoot out the light and storm the tower.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Time your movement with the light.",
+        "ResultText": "You move in stop-start bursts. It takes hours to cross a few hundred meters.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "HitlerYouth",
+    "NodeType": "Encounter",
+    "Title": "Young Conscripts",
+    "Description": "You stumble upon a squad of Hitler Youth digging trenches. They are poorly equipped but fanatical.",
+    "Options": [
+      {
+        "Text": "Engage them.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Withdraw to avoid the fight.",
+        "ResultText": "You decide not to slaughter them, circling wide around the digging site.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "FuelDepot",
+    "NodeType": "Encounter",
+    "Title": "Refueling Station",
+    "Description": "Two trucks are refueling at a small roadside depot guarded by a skeleton crew.",
+    "Options": [
+      {
+        "Text": "Attack and ignite the fuel.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Sneak around the back of the depot.",
+        "ResultText": " The smell of gasoline is strong, but you manage to skirt the perimeter unnoticed.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "UrbanRuins",
+    "NodeType": "Encounter",
+    "Title": "Street Fighting",
+    "Description": "You enter a bombed-out town. A German squad is fortified in a bakery across the street.",
+    "Options": [
+      {
+        "Text": "Clear the building room by room.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Move through the sewers.",
+        "ResultText": "The sewers are vile and infested with rats, but they get you past the bakery safely.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "SSOfficerCar",
+    "NodeType": "Encounter",
+    "Title": "High Value Target",
+    "Description": "An unattended staff car sits outside a requisitioned manor house. An SS officer and his bodyguards are inspecting a map on the hood.",
+    "Options": [
+      {
+        "Text": "Take the shot.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Don't press your luck, keep moving.",
+        "ResultText": "You leave the officer be. The mission is survival, not assassination.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "Nebelwerfer",
+    "NodeType": "Encounter",
+    "Title": "Screaming Mimi",
+    "Description": "You hear the terrifying shriek of a Nebelwerfer rocket launcher nearby. The crew is reloading for another barrage.",
+    "Options": [
+      {
+        "Text": "Silence the battery.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Dig in and wait for the barrage to end.",
+        "ResultText": "The rockets scream over your heads. You survive the concussive blasts, but your hearing and morale take a hit.",
+        "Consequences": [
+          {
+            "Type": "DamageSquad"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "RailYard",
+    "NodeType": "Encounter",
+    "Title": "The Rail Line",
+    "Description": "A supply train has stopped on the tracks. Guards are walking the length of the cars.",
+    "Options": [
+      {
+        "Text": "Attack the guards.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Climb over the coupling between cars.",
+        "ResultText": "You time it perfectly, slipping between the cars while the guards' backs are turned.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "DeserterBandits",
+    "NodeType": "Encounter",
+    "Title": "Rogue Elements",
+    "Description": "A group of soldiers in unkempt German uniforms are looting a farmhouse. They look like deserters, but they are heavily armed.",
+    "Options": [
+      {
+        "Text": "Drive them off.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Give them a wide berth.",
+        "ResultText": "Desperate men are dangerous. You detour through the thorny brush to avoid them.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "TreeSnipers",
+    "NodeType": "Encounter",
+    "Title": "Death from Above",
+    "Description": "A shot rings out and hits the dirt near your feet. Snipers are tied into the trees ahead.",
+    "Options": [
+      {
+        "Text": "Locate and eliminate them.",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      },
+      {
+        "Text": "Sprint for cover and bypass the grove.",
+        "ResultText": "You run zigzag patterns until you clear the kill zone. It is exhausting.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ParachuteDrop",
+    "NodeType": "Resupply",
+    "Title": "Off-Target Drop",
+    "Description": "You find a supply canister swaying in the wind, caught high in an oak tree. It’s marked with Allied insignias.",
+    "Options": [
+      {
+        "Text": "Climb up and cut it down.",
+        "ResultText": "It takes some effort and a risky climb, but the canister crashes down. Inside, you find fresh medical kits and ammo.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Shoot it down.",
+        "ResultText": "You shoot the harness. The canister falls, but the impact damages some of the fragile medical supplies.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "CellarStash",
+    "NodeType": "Resupply",
+    "Title": "The Wine Cellar",
+    "Description": "The ruins of a chateau have a remarkably intact wine cellar. Someone has been using it to store more than just vintage Bordeaux.",
+    "Options": [
+      {
+        "Text": "Search the crates.",
+        "ResultText": "Behind the wine racks, you find crates of grenades and preserved sausages.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Rest briefly and take a bottle.",
+        "ResultText": "A quick drink lifts spirits, but doesn't add much to your tactical supplies.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "RedCrossTruck",
+    "NodeType": "Resupply",
+    "Title": "Abandoned Ambulance",
+    "Description": "A Red Cross truck sits in a ditch. The engine is dead, but the back might still hold supplies.",
+    "Options": [
+      {
+        "Text": "Scavenge for medical supplies.",
+        "ResultText": "You find bandages, morphine, and sterile water. Exactly what the squad needed.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 3
+          }
+        ]
+      },
+      {
+        "Text": "Check the driver's cab.",
+        "ResultText": "You find a map and a chocolate bar. Better than nothing.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ResistanceSafehouse",
+    "NodeType": "Resupply",
+    "Title": "The Baker's Secret",
+    "Description": "A local baker waves you into his shop. He reveals a false floor with supplies meant for the Maquis.",
+    "Options": [
+      {
+        "Text": "Accept the donation graciously.",
+        "ResultText": "The baker fills your packs with fresh bread and stolen German rations.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Trade a weapon for extra food.",
+        "ResultText": "You leave a sidearm for his protection. He insists you take extra provisions in return.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "WreckedGlider",
+    "NodeType": "Resupply",
+    "Title": "The Horsa Glider",
+    "Description": "The wooden skeleton of a British Horsa glider lies in a field. It was carrying a jeep and supplies.",
+    "Options": [
+      {
+        "Text": "Salvage the cargo.",
+        "ResultText": "The jeep is wrecked, but the supply trailer is intact. You load up on ammo and fuel.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Strip the panels for shelter.",
+        "ResultText": "You use the wood to reinforce a bivouac, saving your own tents from wear and tear.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "FieldKitchen",
+    "NodeType": "Resupply",
+    "Title": "The Goulash Cannon",
+    "Description": "You stumble upon a German field kitchen (Gulaschkanone) left behind in a hasty retreat. The stew is still warm.",
+    "Options": [
+      {
+        "Text": "Eat and fill canteens.",
+        "ResultText": "Hot food boosts morale and saves your own rations. You eat your fill.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Pack it up and move.",
+        "ResultText": "It's messy to carry, but you manage to take some of the food with you.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "QuartermasterTent",
+    "NodeType": "Resupply",
+    "Title": "Overrun Command Post",
+    "Description": "This was a temporary command post. Maps, radios, and a quartermaster's tent were left in the chaos.",
+    "Options": [
+      {
+        "Text": "Raid the quartermaster's tent.",
+        "ResultText": "You find high-quality officers' rations, batteries, and clean socks.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 3
+          }
+        ]
+      },
+      {
+        "Text": "Search for intel.",
+        "ResultText": "You find documents detailing supply drops. This leads you to a small cache nearby.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "ThickFog",
+    "NodeType": "Event",
+    "Title": "The Whiteout",
+    "Description": "A dense fog rolls in from the channel, reducing visibility to near zero. You can barely see the soldier in front of you.",
+    "Options": [
+      {
+        "Text": "Keep moving to stay on schedule.",
+        "ResultText": "You press on, but get disoriented. You end up walking in circles and losing gear in the confusion.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -2
+          }
+        ]
+      },
+      {
+        "Text": "Halt and wait for it to lift.",
+        "ResultText": "You sit tight. It consumes time and rations, but the squad stays together.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "StrayLivestock",
+    "NodeType": "Event",
+    "Title": "The Stray Cow",
+    "Description": "A lone dairy cow is wandering through a shell-cratered field, seemingly unharmed.",
+    "Options": [
+      {
+        "Text": "Butcher it for meat.",
+        "ResultText": "It's grim work, but the fresh beef is a massive morale and supply booster for the squad.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 2
+          }
+        ]
+      },
+      {
+        "Text": "Leave it be, it's too risky.",
+        "ResultText": "The noise or the time it would take isn't worth the risk. You move on, hungry but safe.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "WeaponMaintenance",
+    "NodeType": "Event",
+    "Title": "Mud and Grit",
+    "Description": "The constant crawling through mud has clogged the squad's rifles. They are liable to jam in the next fight.",
+    "Options": [
+      {
+        "Text": "Stop for a full cleaning session.",
+        "ResultText": "You use up your gun oil and cleaning patches, but the weapons are spotless.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      },
+      {
+        "Text": "Do a quick wipe and keep moving.",
+        "ResultText": "You wipe off the worst of the muck. Hopefully, it won't matter.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "BurningBuilding",
+    "NodeType": "Event",
+    "Title": "The Burning Home",
+    "Description": "You pass a French cottage engulfed in flames. You can hear coughing inside.",
+    "Options": [
+      {
+        "Text": "Rush in to help.",
+        "ResultText": "You drag an elderly couple to safety. They have nothing to give you but their thanks, and you suffered minor burns.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": -1
+          }
+        ]
+      },
+      {
+        "Text": "Stay on mission.",
+        "ResultText": "You can't save everyone. You avert your eyes and march past.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "PropagandaLeaflets",
+    "NodeType": "Event",
+    "Title": "Paper Rain",
+    "Description": "The wind blows thousands of German propaganda leaflets across your path, urging Allied soldiers to surrender.",
+    "Options": [
+      {
+        "Text": "Collect them for kindling.",
+        "ResultText": "They make excellent fire starter for a smokeless fire to warm the squad.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 1
+          }
+        ]
+      },
+      {
+        "Text": "Ignore the psychological warfare.",
+        "ResultText": "You order the men not to read them. Rubbish, all of it.",
+        "Consequences": [
+          {
+            "Type": "ResourceChange",
+            "Amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "CherbourgFinale",
+    "NodeType": "Ending",
+    "Title": "Escape to Cherbourg",
+    "Description": "After weeks of evading enemy patrols, you reach the outskirts of Cherbourg. The thunder of naval guns shakes the ground and the Allies are assaulting the port. Smoke, chaos, and shouting fill the air as you make your final push toward friendly lines. For this final event you will be getting some reinforcements.",
+    "Options": [
+      {
+        "Text": "Charge through the docks to reach the Allied perimeter!",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "ID": "DieppeFinale",
+    "NodeType": "Ending",
+    "Title": "The Battle for Dieppe",
+    "Description": "Your squad finally reaches Dieppe, a city torn apart by fire and steel. British and Canadian forces are locked in a brutal fight for every block. You’re exhausted, but your orders are clear: hold this ground until the main army arrive. For this final event you will be getting some reinforcements.",
+    "Options": [
+      {
+        "Text": "Join the assault and push through enemy positions!",
+        "Consequences": [
+          {
+            "Type": "StartCombat"
+          }
+        ]
+      }
+    ]
+  }
+]

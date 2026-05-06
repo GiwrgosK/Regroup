@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GermanOfficerAnimationController
+  m_Controller: {fileID: 9100000, guid: 9b4ef576cf81e384d849a8a01a40c17f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a0dff950ef433b34d9362b6eba0871a8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 94dd27f5db778d14a8267779358d27c8, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e816ee6fe511e2544bfe54778c34007b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f8d220886a42a824c8074623b493d7f9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2524cb9901273b64697936e07a752488, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 06a4cb73704cc2e4db3d737f42ca6e41, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1a7e3753911cd7d4fb44c3abd8a050c5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 56eebe9e4ef9fa141a5dab252e83a6fc, type: 2}

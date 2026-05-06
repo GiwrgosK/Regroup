@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GermanBreacherAnimationController
+  m_Controller: {fileID: 9100000, guid: b7f493af702a1b8419758231d84a2c5b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b2f1f551cbbc880488a3d1e553660c33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8fa41ad141650fd4794c051e8f7137aa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 696c523f201c67248916261902cece56, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 90745af2654696142b483014129f11ad, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 01de98a333442f049bf5337d97d9ff19, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d6d3d1ac52abef6408a128f6fc19332e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c044fd5b417941a41917ac47baf5e1d9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9baae3f13d94e284f8202a074872745f, type: 2}

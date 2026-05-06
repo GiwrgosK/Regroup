@@ -1,0 +1,40 @@
+{
+  "firstNames": [
+    "James", "Robert", "John", "William", "Charles", 
+    "George", "Joseph", "Edward", "Frank", "Thomas", 
+    "Walter", "Harry", "Arthur", "Albert", "Clarence", 
+    "Eugene", "Harold", "Paul", "Raymond", "Richard",
+    "Chester", "Cecil", "Floyd", "Vernon", "Warren",
+	"Jim", "Mat"
+  ],
+  "lastNames": [
+    "Parker", "Miller", "Johnson", "Baker", "Smith", 
+    "Kowalski", "O'Malley", "Schmidt", "Russo", "Cohen", 
+    "Washington", "Rodriguez", "Sullivan", "Moretti", "Dubois", 
+    "Chen", "Novak", "Higgins", "Wagner", "Fletcher", "Wright",
+	"Bennett", "Ross", "Hughes"
+  ],
+  "bios": [
+    "Former farmhand from Nebraska. Misses the cornfields.",
+    "Worked on a Ford assembly line in Detroit.",
+    "Drafted immediately after Pearl Harbor.",
+    "Sole survivor of a training accident in basic.",
+    "Hunter from the Appalachians. Excellent shot.",
+    "University mathematics professor. Over-analyzes orders.",
+    "Ex-bootlegger who drove rum during Prohibition.",
+    "Lied about his age to enlist. He is only 17.",
+    "Semi-pro baseball pitcher. Can throw a grenade 60 yards.",
+    "Jazz pianist from New Orleans. Keeps morale high.",
+    "Son of a Senator. Trying to prove he isn't soft.",
+    "Former boxer with a broken nose and a heavy swing.",
+    "Worked as a coal miner. Not afraid of the dark.",
+    "Quiet man. Sends all his pay home to his mother.",
+    "Mechanic from Chicago. claims he can fix anything.",
+    "Gambler who owes money to the wrong people back home.",
+    "Eagle Scout. Knows every knot in the book.",
+    "Writes poetry in his trench when no one is looking.",
+    "Used to be a butcher. Handle with care.",
+    "Just wants to get this over with and go home.",
+	"Married a very famous singer."
+  ]
+}

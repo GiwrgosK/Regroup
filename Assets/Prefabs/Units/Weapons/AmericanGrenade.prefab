@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7095364055392368561
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4818106957885473086, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cecb35f13dc198945a65513ee1cf89e0, type: 2}
+    - target: {fileID: -2859109400176981367, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cecb35f13dc198945a65513ee1cf89e0, type: 2}
+    - target: {fileID: -248005119892688762, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cecb35f13dc198945a65513ee1cf89e0, type: 2}
+    - target: {fileID: 919132149155446097, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: m_Name
+      value: AmericanGrenade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803813084240995372, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cecb35f13dc198945a65513ee1cf89e0, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6652364745742966787}
+  m_SourcePrefab: {fileID: 100100000, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+--- !u!1 &7977746111793302240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bbe2f50237a6e474a8601753fda647ce, type: 3}
+  m_PrefabInstance: {fileID: 7095364055392368561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-6652364745742966787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7977746111793302240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3224526191f9c4c91360fa205d04c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadeExplosionPrefab: {fileID: 6742546785453284691, guid: a804313d1f8bbca4fb4ad01661717940, type: 3}
+  grenadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.00050553423
+      value: 0.6001216
+      inSlope: -0.0029304547
+      outSlope: -0.0029304547
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.047952913
+      value: 0.6543576
+      inSlope: 1.806924
+      outSlope: 1.806924
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.31526348
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.39260983
+      value: 1.1721842
+      inSlope: -0.081074186
+      outSlope: -0.081074186
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.92958707
+      value: 0.0024218708
+      inSlope: -2.1784208
+      outSlope: -2.1784208
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  trailRenderer: {fileID: 43644790955683810, guid: 39ce23d63384c344f86d1b9489cf01cd, type: 3}

@@ -1,0 +1,101 @@
+{
+  "towns": [
+    
+	{
+      "name": "Le Mans",
+      "position": { "x": 385, "y": 430 }
+    },
+    {
+      "name": "Alençon",
+      "position": { "x": 370, "y": 348 }
+    },
+	{
+      "name": "Argentan",
+      "position": { "x": 354, "y": 296 }
+    },
+	{
+      "name": "Falaise",
+      "position": { "x": 334, "y": 250 }
+    },
+	{
+      "name": "Caen",
+      "position": { "x": 310, "y": 182 }
+    },
+	{
+      "name": "Cabourg",
+      "position": { "x": 371, "y": 132 }
+    },
+	{
+      "name": "Lisieux",
+      "position": { "x": 457, "y": 191 }
+    },
+	{
+      "name": "Bernay",
+      "position": { "x": 494, "y": 205 }
+    },
+	{
+      "name": "Erreux",
+      "position": { "x": 562, "y": 207 }
+    },
+	{
+      "name": "Rouen",
+      "position": { "x": 583, "y": 118 }
+    },
+	{
+      "name": "Dieppe",
+      "position": { "x": 580, "y": 26 }
+    },
+	{
+      "name": "Le Havre",
+      "position": { "x": 443, "y": 90 }
+    },
+	{
+      "name": "Flers",
+      "position": { "x": 272, "y": 288 }
+    },
+	{
+      "name": "Domfront",
+      "position": { "x": 239, "y": 352 }
+    },
+	{
+      "name": "Mortain",
+      "position": { "x": 193, "y": 308 }
+    },
+	{
+      "name": "Vire",
+      "position": { "x": 187, "y": 260 }
+    },
+	{
+      "name": "Caumont",
+      "position": { "x": 212, "y": 182 }
+    },
+	{
+      "name": "Bayeux",
+      "position": { "x": 229, "y": 137 }
+    },
+	{
+      "name": "Avranches",
+      "position": { "x": 85, "y": 285 }
+    },
+	{
+      "name": "Coutances",
+      "position": { "x": 82, "y": 212 }
+    },
+	{
+      "name": "St. Lo",
+      "position": { "x": 140, "y": 181 }
+    },
+	{
+      "name": "Carentan",
+      "position": { "x": 124, "y": 126 }
+    },
+	{
+      "name": "Valognes",
+      "position": { "x": 95, "y": 76 }
+    },
+	{
+      "name": "Cherbourg",
+      "position": { "x": 92, "y": 44 }
+    }
+  ]
+}

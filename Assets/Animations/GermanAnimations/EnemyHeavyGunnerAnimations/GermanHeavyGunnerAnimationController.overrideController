@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GermanHeavyGunnerAnimationController
+  m_Controller: {fileID: 9100000, guid: b7f493af702a1b8419758231d84a2c5b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b2f1f551cbbc880488a3d1e553660c33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 95adc53ee2436c84f8bd4804f132ad13, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 696c523f201c67248916261902cece56, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 764cfef6af9555641b44b0cd629220f9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 01de98a333442f049bf5337d97d9ff19, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0afd0d8895ad5204d968142ad4bf52c3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c044fd5b417941a41917ac47baf5e1d9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3cbffca19f6a3784b95406065601d5ed, type: 2}

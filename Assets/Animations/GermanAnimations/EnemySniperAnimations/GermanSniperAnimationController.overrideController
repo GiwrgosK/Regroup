@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GermanSniperAnimationController
+  m_Controller: {fileID: 9100000, guid: b7f493af702a1b8419758231d84a2c5b, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b2f1f551cbbc880488a3d1e553660c33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2fefcc2307982da4290befbfe6aa7032, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 696c523f201c67248916261902cece56, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c7fc9f7826b30bd488b292f029bc7380, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 01de98a333442f049bf5337d97d9ff19, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4e2de20c831aad14ab9a06a189f63ce7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c044fd5b417941a41917ac47baf5e1d9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b0138b0e3da0aec41bf2d5bc424027ec, type: 2}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenuScene/MainMenuScene.unity
+    guid: ceb4269d932dc764aadcc75fcf4d0f34
+  - enabled: 1
+    path: Assets/Scenes/SquadSelectionScene/SquadSelectionScene.unity
+    guid: ac84b44482b0afe4f8f34c90ecde058e
+  - enabled: 1
+    path: Assets/Scenes/CampaignMapScene/CampaignMapScene.unity
+    guid: 83e66e362fe5d834ca4cbcc0f3596e2d
+  - enabled: 1
+    path: Assets/Scenes/CombatScenes/CrossroadsCombatScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/CombatScenes/RiverCombatScene.unity
+    guid: 7fe0131853bc0f245b3d322fe7294411
+  - enabled: 1
+    path: Assets/Scenes/CombatScenes/TrainyardCombatScene.unity
+    guid: c691b4c70f1a2a44c8d83560ccf22596
+  - enabled: 1
+    path: Assets/Scenes/CombatScenes/AbandonedTownCombatScene.unity
+    guid: b6be11cc13f4ca44eaba54b524da4469
+  - enabled: 1
+    path: Assets/Scenes/EndingScene/EndingScene.unity
+    guid: f25b75df01b32444ba78b0cef9848556
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0
